@@ -1,0 +1,7 @@
+{% extends "note/base.html" %}
+{% block content %}
+    {% for note in data %}
+        <h2>{{ note.title }}</h2>
+        <p>{{ note.context }} on {{ note.start_note }}</p>
+    {% endfor %}
+{% endblock content %}
